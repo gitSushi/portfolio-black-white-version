@@ -1,3 +1,9 @@
+# PORTFOLIO 2020
+
+### Skills
+
+Displayed with [D3.js](https://d3js.org/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
