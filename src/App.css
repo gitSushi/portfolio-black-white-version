@@ -2,9 +2,15 @@
   --main-blue: #3824ce;
   --opa7-blue: rgba(56, 36, 206, 0.7);
   --opa3-blue: rgba(56, 36, 206, 0.3);
+  --brownish: #33272a;
+  --opa3-brown: rgba(51, 39, 42, 0.3);
   --exit-timing: 450ms;
   --wide-page-offset: 93px;
   --page-offset: calc(var(--wide-page-offset) - 20px);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .App {
@@ -14,7 +20,7 @@
 /* NAV */
 .nav {
   padding: 25px 0;
-  background-color: #33272a;
+  background-color: var(--brownish);
   margin-bottom: 15px;
 }
 .nav a {

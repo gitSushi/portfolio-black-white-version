@@ -5,7 +5,7 @@ import { Route, NavLink, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import Home from "./components/Home";
-import Intro from "./components/Intro";
+import Intro from "./components/intro/Intro";
 import Skill from "./components/skills/Skill";
 
 class App extends React.Component {
