@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 3em;
+}
+
+.axis-label {
+    fill: black;
+    font-size: 3em;
+}
+
+.tick text {
+    font-size: 2em;
+}
+
+.svg-container {
+    width: 960px;
+    height: 500px;
+    margin: auto;
+}
+
+@media (max-width: 800px){
+    .svg-container {
+        width: 720px;
+        height: 375px;
+    }
+}
+
+@media (max-width: 736px){
+    .svg-container {
+        width: 480px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 415px){
+    .svg-container {
+        width: 360px;
+        height: 187.5px;
+        /* overflow: hidden; */
+    }
+}
+
+@media (orientation: landscape) and (max-width: 812px){
+    .svg-container {
+        width: 551.04px;
+        height: 287px;
+    }
+}
