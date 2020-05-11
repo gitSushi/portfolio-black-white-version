@@ -1,0 +1,61 @@
+.home-page {
+  background-color: #33272a;
+}
+
+.photo {
+  height: calc(100vh - var(--wide-page-offset));
+  background: url("../../images/IMG_0204.JPG");
+  background-size: 120%;
+  background-position-y: 60%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  --lgfilter: linear-gradient(var(--opa7-blue) 50%, var(--opa3-blue) 50%);
+  background: var(--lgfilter) 0 0 / 100% 10px;
+}
+h1 {
+  text-indent: 250px;
+  position: absolute;
+  font: 128px "Arial Black";
+  color: whitesmoke;
+  letter-spacing: -5px;
+}
+
+/* media HOME */
+@media (orientation: landscape) and (max-width: 812px) {
+  .page {
+    top: var(--page-offset);
+  }
+  .home-page {
+    height: 100vh;
+  }
+  .photo {
+    height: calc(100vh - var(--page-offset));
+    background-size: 100%;
+  }
+  h1 {
+    font-size: 64px;
+    text-indent: 100px;
+  }
+}
+
+@media (orientation: portrait) {
+  .photo {
+    height: 50vh;
+    background-size: 120%;
+    background-position: 100% 100%;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    margin: 0;
+    font-size: 64px;
+    text-indent: 0;
+  }
+}

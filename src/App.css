@@ -17,12 +17,21 @@
   text-align: center;
 }
 
+.page {
+  position: absolute;
+  top: var(--wide-page-offset);
+  left: 0;
+  right: 0;
+  height: calc(100vh - var(--wide-page-offset));
+}
+
 /* NAV */
 .nav {
   padding: 25px 0;
   background-color: var(--brownish);
   margin-bottom: 15px;
 }
+
 .nav a {
   display: inline-block;
   width: 100px;
@@ -34,16 +43,10 @@
   text-decoration: none;
   color: white;
 }
+
 .nav a.active {
   background-color: #3824ce;
   color: #000;
-}
-
-.page {
-  position: absolute;
-  top: var(--wide-page-offset);
-  left: 0;
-  right: 0;
 }
 
 .fade-appear,
@@ -66,77 +69,9 @@
   transition: opacity var(--exit-timing) ease-out;
 }
 
-
-/* HOME */
-.home-page {
-  height: calc(100vh - var(--wide-page-offset));
-  background-color: #33272a;
-}
-
-.photo {
-  height: calc(100vh - var(--wide-page-offset));
-  background: url("./images/IMG_0204.JPG");
-  background-size: 120%;
-  background-position-y: 60%;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  position: relative;
-}
-.filter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  --lgfilter: linear-gradient(var(--opa7-blue) 50%, var(--opa3-blue) 50%);
-  background: var(--lgfilter) 0 0 / 100% 10px;
-}
-h1 {
-  text-indent: 250px;
-  position: absolute;
-  font: 128px "Arial Black";
-  color: whitesmoke;
-  letter-spacing: -5px;
-}
-
-/* media NAV */
 @media (orientation: landscape) and (max-width: 812px) {
   .nav {
     padding: 15px 0;
   }
-  .page {
-    top: var(--page-offset);
-  }
-  .home-page {
-    height: 100vh;
-  }
-  .photo {
-    height: calc(100vh - var(--page-offset));
-  }
 }
 
-/* media HOME */
-@media (orientation: portrait) {
-  .photo {
-    height: 50vh;
-    background-size: 120%;
-    background-position: 100% 100%;
-    justify-content: center;
-    align-items: flex-start;
-    background-repeat: no-repeat;
-  }
-  h1 {
-    margin: 0;
-    font-size: 64px;
-    text-indent: 0;
-  }
-}
-
-@media (max-width: 800px) AND (orientation: landscape) {
-  .photo {
-    background-size: 100%;
-  }
-  h1 {
-    font-size: 64px;
-    text-indent: 100px;
-  }
-}
