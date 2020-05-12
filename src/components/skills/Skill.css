@@ -18,7 +18,7 @@
     margin: auto;
 }
 
-@media (max-width: 800px){
+@media (max-width: 812px){
     .svg-container {
         width: 720px;
         height: 375px;
@@ -44,5 +44,11 @@
     .svg-container {
         width: 551.04px;
         height: 287px;
+    }
+}
+
+@media (orientation: portrait) and  (max-width: 812px){
+    .svg-container {
+        margin-top: 2em;
     }
 }

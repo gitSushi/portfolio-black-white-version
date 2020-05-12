@@ -36,6 +36,9 @@ class App extends React.Component {
             </TransitionGroup>
           )}
         />
+        <div className="toggle-menu">
+          <div className="toggle-menu-button"></div>
+        </div>
       </div>
     );
   }

@@ -28,9 +28,9 @@ h1 {
 
 /* media HOME */
 @media (orientation: landscape) and (max-width: 812px) {
-  .page {
+  /* .page {
     top: var(--page-offset);
-  }
+  } */
   .home-page {
     height: 100vh;
   }
