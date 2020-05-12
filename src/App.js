@@ -9,6 +9,10 @@ import Intro from "./components/intro/Intro";
 import Skill from "./components/skills/Skill";
 
 class App extends React.Component {
+  toggleMenu(){
+    // const nav = document.querySelector('.nav');
+    // nav.classList.toggle('menu-active');
+  }
   render() {
     return (
       <div className="App">
@@ -36,7 +40,7 @@ class App extends React.Component {
             </TransitionGroup>
           )}
         />
-        <div className="toggle-menu">
+        <div className="toggle-menu" onClick={this.toggleMenu}>
           <div className="toggle-menu-button"></div>
         </div>
       </div>

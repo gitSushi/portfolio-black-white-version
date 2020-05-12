@@ -7,6 +7,7 @@
   background: url("../../images/IMG_0204.JPG");
   background-size: 120%;
   background-position-y: 60%;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   position: relative;
@@ -45,10 +46,18 @@ h1 {
 }
 
 @media (orientation: portrait) {
-  .photo {
+  /* .photo {
     height: 50vh;
     background-size: 120%;
     background-position: 100% 100%;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+  } */
+  .photo {
+    height: 100vh;
+    background-size: 238%;
+    background-position: 65% 0%;
     justify-content: center;
     align-items: flex-start;
     background-repeat: no-repeat;

@@ -31,6 +31,9 @@
   background-color: var(--brownish);
   margin-bottom: 15px;
 }
+.menu-active {
+  display: none;
+}
 
 .nav a {
   display: inline-block;
@@ -77,8 +80,13 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(51, 39, 42, 0.3);
+  background: #d3c5c9;
 }
+
+.toggle-menu:hover {
+  cursor: pointer;
+}
+
 .toggle-menu-button {
   color: #000;
   position: absolute;
@@ -90,7 +98,7 @@
 }
 
 .toggle-menu-button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -5px;
   left: 0;
@@ -100,7 +108,7 @@
 }
 
 .toggle-menu-button:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 0;
@@ -109,8 +117,6 @@
   background-color: currentColor;
 }
 
-
-
 @media (orientation: landscape) and (max-width: 812px) {
   .nav {
     padding: 15px 0;
@@ -118,15 +124,18 @@
 }
 
 @media (max-width: 812px) {
-  .page {
+  /* .page {
     top: 0;
     height: 100vh;
-  }
-  .nav {
+  } */
+  /* .nav {
     display: none;
-  }
+  } */
+  /* .menu-active {
+    display: none;
+  } */
+
   .toggle-menu {
     display: block;
   }
 }
-
