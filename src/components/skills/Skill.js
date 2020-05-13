@@ -33,7 +33,7 @@ class Skill extends React.Component {
 
   render() {
     return (
-      <div className="page">
+      <div className="page skill-page">
         {/* width="960" height="500" */}
         <div className="svg-container">
         {/* style={{ border: "1px black solid" }} */}

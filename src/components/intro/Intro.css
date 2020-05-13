@@ -2,6 +2,7 @@
 
 .intro-page {
   background: var(--opa3-blue);
+  /* margin-top: 93px; */
   --rock: #7b7e76;
   --grey: #5d535b;
   --terra: #6e5545;
@@ -86,4 +87,40 @@ h2 {
   padding-right: 1em;
   margin: 20px 0 0;
   color: var(--dark-terra);
+}
+
+@media (max-width: 812px) {
+  .intro-page {
+    height: inherit;
+  }
+  .grid-intro {
+    width: 95%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr 50px) 1fr;
+    grid-template-columns: repeat(2, 50px) 1fr;
+  }
+
+  .grid-intro > .grid-item:nth-child(1),
+  .grid-intro > .grid-item:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+  .grid-intro > .grid-item:nth-child(3),
+  .grid-intro > .grid-item:nth-child(4) {
+    grid-row: 3 / 4;
+  }
+  .grid-intro > .grid-item:nth-child(5),
+  .grid-intro > .grid-item:nth-child(6) {
+    grid-row: 5 / 6;
+  }
+
+  .grid-intro > .grid-item:nth-child(1),
+  .grid-intro > .grid-item:nth-child(3),
+  .grid-intro > .grid-item:nth-child(5) {
+    grid-column: 1 / 2;
+  }
+  .grid-intro > .grid-item:nth-child(2),
+  .grid-intro > .grid-item:nth-child(4),
+  .grid-intro > .grid-item:nth-child(6) {
+    grid-column: 3 / 4;
+  }
 }

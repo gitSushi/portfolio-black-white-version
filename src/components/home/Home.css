@@ -3,7 +3,7 @@
 }
 
 .photo {
-  height: calc(100vh - var(--wide-page-offset));
+  height: 100vh;
   background: url("../../images/IMG_0204.JPG");
   background-size: 120%;
   background-position-y: 60%;
@@ -33,10 +33,10 @@ h1 {
     top: var(--page-offset);
   } */
   .home-page {
-    height: 100vh;
+    /* height: 100vh; */
   }
   .photo {
-    height: calc(100vh - var(--page-offset));
+    /* height: 100vh; */
     background-size: 100%;
   }
   h1 {
@@ -55,7 +55,7 @@ h1 {
     background-repeat: no-repeat;
   } */
   .photo {
-    height: 100vh;
+    /* height: 100vh; */
     background-size: 238%;
     background-position: 65% 0%;
     justify-content: center;
@@ -63,7 +63,7 @@ h1 {
     background-repeat: no-repeat;
   }
   h1 {
-    margin: 0;
+    margin: var(--wide-page-offset) 0 0;
     font-size: 64px;
     text-indent: 0;
   }

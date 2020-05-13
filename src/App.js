@@ -9,23 +9,34 @@ import Intro from "./components/intro/Intro";
 import Skill from "./components/skills/Skill";
 
 class App extends React.Component {
-  toggleMenu(){
-    // const nav = document.querySelector('.nav');
-    // nav.classList.toggle('menu-active');
+  toggleMenu() {
+    const nav = document.querySelector(".nav-container");
+    nav.classList.toggle("menu-active");
   }
   render() {
     return (
       <div className="App">
-        <div className="nav">
-          <NavLink exact to="/" activeClassName="active">
-            Home
-          </NavLink>
-          <NavLink to="/intro" activeClassName="active">
-            Intro
-          </NavLink>
-          <NavLink to="/skill" activeClassName="active">
-            Skill
-          </NavLink>
+        <div className="toggle-menu" onClick={this.toggleMenu}>
+          <div className="toggle-menu-button"></div>
+        </div>
+        <div className="nav-container">
+          <div className="nav">
+            <div className="link-container">
+              <NavLink exact to="/" activeClassName="active">
+                Home
+              </NavLink>
+            </div>
+            <div className="link-container">
+              <NavLink to="/intro" activeClassName="active">
+                Intro
+              </NavLink>
+            </div>
+            <div className="link-container">
+              <NavLink to="/skill" activeClassName="active">
+                Skill
+              </NavLink>
+            </div>
+          </div>
         </div>
         <Route
           render={({ location }) => (
@@ -40,9 +51,6 @@ class App extends React.Component {
             </TransitionGroup>
           )}
         />
-        <div className="toggle-menu" onClick={this.toggleMenu}>
-          <div className="toggle-menu-button"></div>
-        </div>
       </div>
     );
   }
