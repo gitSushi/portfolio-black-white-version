@@ -1,5 +1,6 @@
 .skill-page {
     margin-top: var(--wide-page-offset);
+    height: calc(100vh - var(--wide-page-offset));
 }
 
 .title {
